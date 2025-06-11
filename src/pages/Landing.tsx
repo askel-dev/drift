@@ -60,7 +60,7 @@ const Landing = () => {
         <header className="p-8 flex justify-between items-center">
           <div className="flex items-center space-x-3">
             <img 
-              src="/lovable-uploads/8436588b-0862-4bbf-b5ef-991b44803f6a.png" 
+              src="/lovable-uploads/227fcef9-ed17-4476-9b16-21ea4ab61fa4.png" 
               alt="Drift Logo" 
               className="w-8 h-8"
             />
@@ -76,44 +76,46 @@ const Landing = () => {
         </header>
 
         {/* Hero Section */}
-        <main className="flex-1 flex items-center justify-center px-8">
-          <div className="max-w-6xl mx-auto w-full">
-            <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <main className="flex-1 flex items-center justify-center px-8 py-16">
+          <div className="max-w-7xl mx-auto w-full">
+            <div className="grid lg:grid-cols-2 gap-20 items-center min-h-[600px]">
               {/* Logo Section - Left */}
-              <div className="flex justify-center lg:justify-start">
-                <img 
-                  src="/lovable-uploads/8436588b-0862-4bbf-b5ef-991b44803f6a.png" 
-                  alt="Drift Logo" 
-                  className="w-80 h-80 md:w-96 md:h-96 lg:w-[450px] lg:h-[450px] opacity-90 hover:opacity-100 transition-opacity duration-500"
-                />
+              <div className="flex justify-center lg:justify-start order-2 lg:order-1">
+                <div className="relative">
+                  <img 
+                    src="/lovable-uploads/227fcef9-ed17-4476-9b16-21ea4ab61fa4.png" 
+                    alt="Drift Logo" 
+                    className="w-[400px] h-[400px] md:w-[500px] md:h-[500px] lg:w-[600px] lg:h-[600px] opacity-90 hover:opacity-100 transition-opacity duration-500 drop-shadow-2xl"
+                  />
+                </div>
               </div>
               
               {/* Content Section - Right */}
-              <div className="text-center lg:text-left">
-                <h1 className="text-5xl md:text-6xl lg:text-7xl font-light text-gray-800 mb-6 leading-tight">
+              <div className="text-center lg:text-left order-1 lg:order-2">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light text-gray-800 mb-8 leading-tight">
                   Write with
-                  <span className="block bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
+                  <span className="block bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mt-2">
                     your emotions
                   </span>
                 </h1>
                 
-                <p className="text-xl md:text-2xl text-gray-600 mb-12 font-light leading-relaxed">
+                <p className="text-lg md:text-xl lg:text-2xl text-gray-600 mb-12 font-light leading-relaxed max-w-xl lg:max-w-none">
                   A minimalistic note-taking experience that adapts to your mood, 
                   creating an atmospheric space where thoughts flow naturally.
                 </p>
 
-                <div className="space-y-4 md:space-y-0 md:space-x-4 md:flex lg:justify-start justify-center">
+                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                   <Button 
                     size="lg"
                     onClick={() => navigate('/app')}
-                    className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg font-light rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
+                    className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-10 py-4 text-lg font-medium rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
                   >
                     Start Writing
                   </Button>
                   <Button 
                     variant="outline" 
                     size="lg"
-                    className="border-gray-300 text-gray-700 hover:bg-white/50 backdrop-blur-sm px-8 py-4 text-lg font-light rounded-2xl"
+                    className="border-gray-300 text-gray-700 hover:bg-white/50 backdrop-blur-sm px-10 py-4 text-lg font-medium rounded-2xl hover:scale-105 transition-all duration-300"
                   >
                     Learn More
                   </Button>
