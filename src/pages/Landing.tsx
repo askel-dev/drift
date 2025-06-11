@@ -68,7 +68,7 @@ const Landing = () => {
           </div>
           <Button 
             variant="ghost" 
-            onClick={() => navigate('/')}
+            onClick={() => navigate('/app')}
             className="text-gray-700 hover:text-gray-900 hover:bg-white/50 backdrop-blur-sm"
           >
             Open App
@@ -78,11 +78,11 @@ const Landing = () => {
         {/* Hero Section */}
         <main className="flex-1 flex items-center justify-center px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <div className="mb-8 flex justify-center">
+            <div className="mb-12 flex justify-center">
               <img 
                 src="/lovable-uploads/8436588b-0862-4bbf-b5ef-991b44803f6a.png" 
                 alt="Drift Logo" 
-                className="w-24 h-24 opacity-80"
+                className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 opacity-90 hover:opacity-100 transition-opacity duration-500"
               />
             </div>
             
@@ -101,7 +101,7 @@ const Landing = () => {
             <div className="space-y-4 md:space-y-0 md:space-x-4 md:flex md:justify-center">
               <Button 
                 size="lg"
-                onClick={() => navigate('/')}
+                onClick={() => navigate('/app')}
                 className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-4 text-lg font-light rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 Start Writing
